@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Making sure the web-site will scale fine on mobiles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Trying to force IE to perform at its best-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Meta description, aim for about 150 characters-->
+        <meta name="description" content="Nana is a very beautiful and minimalistic theme with a gorgeous animation that will make the user remember your website and want to come back.">
+        <!-- Stylesheets-->
+        <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css">
+        <link rel="stylesheet" href="./assets/css/linea.min.css">
+        <link rel="stylesheet" href="./assets/css/nana-red.css">
+        <!-- Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="./favicons/manifest.json">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Site title-->
+        <title>dices corp</title>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo" href="#/">dices</a>
+                    <!-- A desktop version navigation-->
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a class="waves-effect waves-light" href="#intro">home</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#cases">originais</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#expertise">porque nós</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#pricing">dice match</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#about">supers</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#philosophy">nosso jeito</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#journal">news</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#contact">contato</a>
+                        </li>
+                    </ul>
+                    <!-- Side navigation for mobile devices-->
+                    <ul class="side-nav" id="slide-out">
+                        <li>
+                            <a class="waves-effect waves-light" href="#intro">home</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#cases">próprios</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#expertise">decisivo</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#pricing">dice app</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#about">nós</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#philosophy">filosofia</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#journal">news</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="#contact">contato</a>
+                        </li>
+                    </ul>
+                    <!-- Side nav menu button--><span class="right show-on-medium-and-down hide-on-large-only"><a class="sidenav-toggle" id="sidenav-toggle" href="#" data-activates="slide-out">Menu</a></span></div>
+            </nav>
+        </div>
+        <!-- Canvas background-->
+        <canvas class="canvas" id="canvas"></canvas>
+        <!-- Hero section-->
+
+        <section class="hero scrollspy" id="intro">
+            <div class="container">
+                <h1>Oi, aqui nerdice é levada a sério!</h1>
+            </div>
+        </section>
+        <!-- Cases section-->
+
+        <section class="cases scrollspy" id="cases">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h2>universos originais (IP)</h2>
+                    </div>
+                </div>
+                <div class="blocks">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <div class="row">
+                                <div class="col s12">
+                                    <a class="block rectangle-60 modal-trigger" href="#vaso-bianco" style="background-image: url(./assets/images/cases/vase-white-bg.png);">
+                                        <div class="title">Zero RPG</div>
+                                    </a>
+                                </div>
+                                <div class="col s12">
+                                    <a class="block rectangle-60 modal-trigger" href="#wooden-tree-2" style="background-image: url(./assets/images/cases/tree-2-white-bg.png);">
+                                        <div class="title">em breve mais</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <a class="block rectangle-120 modal-trigger" href="#la-bottiglia" style="background-image: url(./assets/images/cases/white-bottle-white-bg.png);">
+                                <div class="title">Nébula</div>
+                      
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row push-row-top" id="show-all-cases-container">
+                    <div class="col s12 center">
+                        <a class="btn-large btn-flat waves-effect waves-light" id="show-all-cases">Show all cases</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vaso bianco modal-->
+        <div class="modal bottom-sheet" id="vaso-bianco">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/cases/vase-white-bg.png);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>ZERO rpg</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>público<br></span>
+                            <strong>adultos & jovens adultos</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>categoria<br></span>
+                            <strong>cyberpunk horror</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>periodo<br></span>
+                            <strong>2050</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>criador<br></span>
+                            <strong>Pablo Frazão</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">"Às vezes, me pergunto se algum de nós ainda lembra como era viver sem medo.  No topo dos prédios, luzes de neon refletem em poças de sangue, enquanto monstros caçam ao lado de máquinas. Dizem que somos livres, mas somos apenas peças – humanos, vampiros, lobisomens, todos presos nos fios de uma teia invisível que controla o caos desta cidade."
+                            </p>
+                            <p>ZERO RPG é um sistema original de horror cyberpunk, ambientado em um futuro onde a humanidade se fundiu com criaturas lendárias e a tecnologia redefine os limites da existência. Inspirado por clássicos do horror e fantasia, ZERO mergulha os jogadores em uma metrópole distópica onde corporações, governos e criaturas sobrenaturais disputam o controle de tudo — e de todos.
+
+Neste mundo, vampiros dominam a noite em alianças instáveis, lobisomens caçam nos becos digitais e hackers humanos tentam sobreviver entre facções rivais e implantes perigosos. A linha entre máquina e carne se tornou turva, assim como o conceito de humanidade. O horror não vem apenas das criaturas à espreita, mas também do vazio existencial e da perda de controle sobre a própria vida.
+
+ZERO propõe regras ágeis e flexíveis, centradas em escolhas difíceis, moralidade ambígua e consequências reais. Aqui, o sobrenatural encontra o sintético: poderes antigos adaptados à era do ciberespaço, conspirações de criaturas imortais e a constante sensação de estar sendo manipulado por forças maiores. Sobreviver é uma questão de adaptação – ou de perder o pouco que resta de sua essência.
+
+</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l8 offset-l2">
+                            <img class="responsive-img" src="./assets/images/cases/phone-white-bg.png" alt="Blue phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <p>Seja você um caçador, um monstro ou apenas mais uma alma tentando escapar das garras do sistema, ZERO RPG convida a explorar um mundo onde a dor é cotidiana, a guerra é eterna e a esperança é um luxo perigoso.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <div class="col s12 m6 l6 hide-on-small-and-down"></div>
+                        <a class="modal-nav col s12 m6 l6 right-align" href="#la-bottiglia" data-next-modal="la-bottiglia"><span>Next project</span>
+                            <div class="single-page-title">
+                                <strong>Nébula</strong><span class="arrow left-arrow">&rarr;</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- La bottiglia modal-->
+        <div class="modal bottom-sheet" id="la-bottiglia">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/cases/white-bottle-white-bg.png);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>Nébula</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>público<br></span>
+                            <strong>infanto juvenil</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>categoria<br></span>
+                            <strong>cartoon slapstick</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>periodo<br></span>
+                            <strong>atual</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>criador<br></span>
+                            <strong>Felipe Consentino</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">"Dizem que, na Nébula, todo dia é uma aventura diferente. Ontem mesmo fui perseguido por um aspirador voador, e acabei preso dentro de uma gelatina gigante! Mas aqui todo mundo ri junto no final, até quem levou torta na cara. Ah, se eu fosse você, não deixava de explorar nem um cantinho desse lugar maluco!"
+— Bigode, o gato mais curioso da Nébula
+                            </p>
+                            <p>Bem-vindo à Nébula, um mundo onde tudo pode acontecer e a imaginação é a única regra que importa! Aqui, cidades flutuam em nuvens de algodão-doce, rios podem ser feitos de suco de laranja, e as leis da física dão lugar à criatividade e ao bom humor. Em Nébula, gatos perseguem ratos com patins a jato, cachorros inventam máquinas que transformam chuva em confete, e tartarugas sonham em ser corredoras de Fórmula 1 ou ninjas.
+
+Neste universo colorido e animado, o impossível é só o começo: cada cenário é um convite para a aventura, para inventar histórias, solucionar problemas engraçados e encontrar amigos pelo caminho. Nébula foi criada especialmente para crianças e adolescentes, trazendo não só diversão, mas também oportunidades incríveis para aprender brincando.
+
+Aqui, todo mundo pode experimentar papéis diferentes, trabalhar em equipe e exercitar a criatividade sem medo de errar. O jogo incentiva o respeito, a colaboração, o olhar para o outro e até a resolução de conflitos de forma leve, sempre com espaço para o riso e a imaginação. Professores e terapeutas podem usar Nébula como ferramenta para desenvolver empatia, comunicação, autoconfiança e habilidades sociais, transformando cada partida em um aprendizado.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>Vem!</h3>
+                            <p>Na Nébula, todo desafio vira brincadeira e cada história, uma lição diferente. Que tal se juntar à próxima confusão – digo, missão – e descobrir o que esse mundo tem guardado pra você?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <a class="modal-nav col s12 m6 l6" href="#vaso-bianco" data-previous-modal="vaso-bianco"><span>Previous project</span>
+                            <div class="single-page-title"><span class="arrow right-arrow">&larr;</span>
+                                <strong>ZERO rpg</strong>
+                            </div>
+                        </a>
+                        <a class="modal-nav col s12 m6 l6 right-align" href="#wooden-tree-2" data-next-modal="wooden-tree-2"><span>Next project</span>
+                            <div class="single-page-title">
+                                <strong>muito mais no futuro!</strong><span class="arrow left-arrow">&rarr;</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wooden tree modal-->
+        <div class="modal bottom-sheet" id="wooden-tree-2">
+            <div class="modal-close absolute">&times;</div>
+            <div class="modal-cover" style="background-image: url(./assets/images/cases/tree-2-white-bg.png);"></div>
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row spacious-row">
+                        <div class="col s12 offset-m1 m10 offset-l3 l9">
+                            <h1>Um Brilhante Futuro</h1>
+                        </div>
+                    </div>
+                    <div class="row spacious-row meta">
+                        <div class="col s12 m5 offset-m1 l3"><span>público<br></span>
+                            <strong>X</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>categoria<br></span>
+                            <strong>X</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>periodo<br></span>
+                            <strong>X</strong>
+                        </div>
+                        <div class="col s12 m5 offset-m1 l3"><span>criador<br></span>
+                            <strong>XXX</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 l6 offset-l3">
+                            <h3>The concept</h3>
+                            <p class="flow-text">X
+                            </p>
+                            <p>X
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="slider">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="./assets/images/cases/tree-3-white-bg.png" alt="Wooden Tree">
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/cases/tree-2-white-bg.png" alt="Wooden Tree">
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/cases/tree-1-white-bg.png" alt="Wooden Tree">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row modal-nav-container flow-text">
+                        <a class="modal-nav col s12 m6 l6" href="#la-bottiglia" data-previous-modal="la-bottiglia"><span>Previous project</span>
+                            <div class="single-page-title"><span class="arrow right-arrow">&larr;</span>
+                                <strong>Nébula</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Expertise section-->
+
+        <section class="expertise scrollspy" id="expertise">
+            <div class="container center">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>?¿porque nós?¿</h2>
+                    </div>
+                </div>
+                <div class="row push-row flow-text">
+                    <div class="col s12 m6 l4 margin-on-medium-and-down">
+                        <i class="icon-basic-heart"></i>
+                        <div class="service-title">amor pelo que fazemos</div>
+                    </div>
+                    <div class="col s12 m6 l4 margin-on-medium-and-down">
+                        <i class="icon-basic-accelerator"></i>
+                        <div class="service-title">o tempo certo para tudo</div>
+                    </div>
+                    <div class="col s12 m6 l4 hide-on-med-only">
+                        <i class="icon-basic-target"></i>
+                        <div class="service-title">público focado</div>
+                    </div>
+                </div>
+                <div class="row flow-text">
+                    <div class="col s12 m6 l4 margin-on-medium-and-down">
+                        <i class="icon-basic-bolt"></i>
+                        <div class="service-title">ação 360</div>
+                    </div>
+                    <div class="col s12 m6 l4 margin-on-medium-and-down">
+                        <i class="icon-basic-joypad"></i>
+                        <div class="service-title">diversão sempre</div>
+                    </div>
+                    <div class="col s12 m6 l4 hide-on-med-only">
+                        <i class="icon-basic-signs"></i>
+                        <div class="service-title">visão global, ações regionais</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing section-->
+
+        <section class="pricing scrollspy" id="pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h2>dice match preços - em breve</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l4 margin-on-medium-and-down">
+                        <div class="price-box">
+                            <h4>Explorador</h4>
+                            <h5><sup>R$</sup>1</h5>
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <li>x<span class="info tooltipped" data-position="right" data-delay="50" data-tooltip="The number of allowed users">?</span></li>
+                                <li>x</li>
+                                <li>x</li>
+                                <li>x<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Involves Gulp commands">?</span></li>
+                                <li>x</li>
+                                <li>x</li>
+                                <li>&times;</li>
+                                <li>&times;</li>
+                            </ul>
+                            <a class="btn-large btn-flat waves-effect waves-light">quero</a>
+                        </div>
+                    </div>
+                    <div class="col s12 l4 margin-on-medium-and-down">
+                        <div class="price-box featured">
+                            <h4>Herói</h4>
+                            <h5><sup>R$</sup>2</h5>
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <li>X<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="The number of allowed users">?</span></li>
+                                <li>X</li>
+                                <li>X</li>
+                                <li>X<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Involves Gulp commands">?</span></li>
+                                <li>X</li>
+                                <li>X</li>
+                                <li>X<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Includes Jade templates engine">?</span></li>
+                                <li>&times;</li>
+                            </ul>
+                            <a class="btn-large btn-flat waves-effect waves-light">quero agora</a>
+                        </div>
+                    </div>
+                    <div class="col s12 l4">
+                        <div class="price-box">
+                            <h4>Lenda</h4>
+                            <h5><sup>R$</sup>3</h5>
+                            <div class="divider"></div>
+                            <ul class="flow-text">
+                                <li>X<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="The number of allowed users">?</span></li>
+                                <li>X</li>
+                                <li>X</li>
+                                <li>X<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Involves Gulp commands">?</span></li>
+                                <li>X</li>
+                                <li>X</li>
+                                <li>X<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="Includes Jade templates engine">?</span></li>
+                                <li>X<span class="info tooltipped" data-position="top" data-delay="50" data-tooltip="This is for Jade, Sass and CoffeeScript">?</span></li>
+                            </ul>
+                            <a class="btn-large btn-flat waves-effect waves-light">mim dá</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ section-->
+
+        <section class="scrollspy faq" id="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center">
+                        <h2>FAQ</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="collapsible flow-text" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header active">— O que é a Dices como empresa?</div>
+                                <div class="collapsible-body">
+                                    <p>A Dices é um projeto/startup brasileira criada por e para nerds e jogadores de RPG! Somos um grupo de amigos apaixonados por cultura geek, que acredita no poder das boas histórias, do jogo colaborativo e da criatividade. Nossa missão é unir fãs de todos os cantos, criando experiências incríveis, inovando sempre — e claro, sem perder a diversão pelo caminho!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">— Que tipo de conteúdo a Dices produz e apoia?</div>
+                                <div class="collapsible-body">
+                                    <p>Aqui na Dices, a gente vive e respira conteúdo nerd: lançamos campanhas narradas em áudio, aventuras e suplementos digitais para mesas de RPG, matérias especiais, notícias, resenhas de jogos e entrevistas com criadores que também são fãs como a gente. Também fazemos eventos e colaborações com artistas, editoras e marcas que amam o universo geek tanto quanto nós.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">— Qual o diferencial da Dices no mercado?</div>
+                                <div class="collapsible-body">
+                                    <p>Nosso segredo? Proximidade de verdade com a comunidade! Além de criar conteúdos autorais e apoiar projetos independentes, a Dices valoriza cada voz do universo nerd nacional. Amamos ouvir ideias, jogar junto, co-criar e tornar tudo acessível, inovador e divertido. E sim: somos profissionais, mas nunca deixamos de ser jogadores apaixonados por dados e boas histórias.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">— Como a Dices seleciona seus parceiros e colaboradores?</div>
+                                <div class="collapsible-body">
+                                    <p>A gente faz questão de trabalhar com pessoas e marcas que compartilham nossa paixão por RPG, criatividade e diversidade. Valorizamos talentos nacionais, buscamos parcerias sinceras e acreditamos que o universo geek fica ainda melhor quando tem espaço para todo mundo brilhar — do iniciante ao veterano de mesa!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section-->
+
+        <section class="team scrollspy" id="about">
+            <div class="container center">
+                <div class="row">
+                    <div class="col s12">
+                        <h2>supers</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/annie.jpg" alt="Annie">
+                        <div class="name flow-text">Michel Nantes</div>
+                        <div class="title">head of operations</div>
+                    </div>
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/carina.jpg" alt="Carina">
+                        <div class="name flow-text">Romulo Mathei</div>
+                        <div class="title">x</div>
+                    </div>
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/greg.jpg" alt="Greg">
+                        <div class="name flow-text">Felipe Consentino</div>
+                        <div class="title">X</div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <img class="responsive-img" src="./assets/images/team/russell.jpg" alt="Russell">
+                        <div class="name flow-text">Diogo Santos</div>
+                        <div class="title">X</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/pete.jpg" alt="Pete">
+                        <div class="name flow-text">Pablo Frazão</div>
+                        <div class="title">X</div>
+                    </div>
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/olga.jpg" alt="Olga">
+                        <div class="name flow-text">Lion</div>
+                        <div class="title">Designer</div>
+                        <ul class="social"></ul>
+                    </div>
+                    <div class="col s12 m6 l3 margin-on-medium-and-down">
+                        <img class="responsive-img" src="./assets/images/team/jane.jpg" alt="Jane">
+                        <div class="name flow-text">Anakin</div>
+                        <div class="title">Marketing VP</div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <img class="responsive-img" src="./assets/images/team/roo.jpg" alt="Roo">
+                        <div class="name flow-text">Trufa</div>
+                        <div class="title">CEO</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p class="flow-text">quer fazer parte?
+                            <a class="nobr underline" href="mailto:contato@dicesrpg.com?subject=colab">vem colocaborar!</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Philosophy section-->
+
+        <section class="philosophy scrollspy" id="philosophy">
+            <div class="container">
+                <div class="row push-row">
+                    <div class="col s12 center">
+                        <h2>nosso jeito de jogar e contruir</h2>
+                    </div>
+                </div>
+                <div class="row big-icons-row">
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-1">
+                                    <i class="icon-basic-magnifier"></i>
+                                    <h5>Explorar juntos</h5>
+                                </a>
+                            </li>
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-2">
+                                    <i class="icon-ecommerce-graph3"></i>
+                                    <h5>Pensar com estratégia</h5>
+                                </a>
+                            </li>
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-3">
+                                    <i class="icon-ecommerce-graph-increase"></i>
+                                    <h5>Melhorar sempre</h5>
+                                </a>
+                            </li>
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-4">
+                                    <i class="icon-basic-pencil-ruler"></i>
+                                    <h5>Medir para crescer</h5>
+                                </a>
+                            </li>
+                            <li class="tab col s4 m3 l2">
+                                <a href="#philosophy-5">
+                                    <i class="icon-basic-mixer2"></i>
+                                    <h5>Cuidar com carinho</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents">
+                        <div class="col s12 l8 offset-l2" id="philosophy-1">
+                            <h5>Explorar juntos</h5>
+                            <p class="flow-text center margin-top-more">Na Dices, a aventura começa na descoberta! Buscamos tendências, histórias e ideias em cada canto do universo nerd — e nada é mais divertido do que explorar novos mundos ao lado de quem também ama RPG, boardgames e cultura pop.</p>
+                        </div>
+                        <div class="col s12 l8 offset-l2" id="philosophy-2">
+                            <h5>Pensar com estratégia</h5>
+                            <p class="flow-text center margin-top-more">Por trás de cada projeto, tem análise, pesquisa e muita troca de experiência. Observamos o que o público quer, ouvimos feedbacks e estudamos o cenário para criar conteúdos, produtos e experiências que realmente fazem diferença.</p>
+                        </div>
+                        <div class="col s12 l8 offset-l2" id="philosophy-3">
+                            <h5>Melhorar sempre</h5>
+                            <p class="flow-text center margin-top-more">Level up é parte da nossa essência! Toda ideia pode virar algo ainda mais épico: ajustamos, aprimoramos, aprendemos juntos e não temos medo de mudar o jogo quando é preciso.</p>
+                        </div>
+                        <div class="col s12 l8 offset-l2" id="philosophy-4">
+                            <h5>Medir para crescer</h5>
+                            <p class="flow-text center margin-top-more">Nada de magia sem controle! Medimos resultados, ouvimos a comunidade e acompanhamos cada iniciativa de perto. Assim, sabemos quando acertamos em cheio — e quando é hora de ajustar os dados.</p>
+                        </div>
+                        <div class="col s12 l8 offset-l2" id="philosophy-5">
+                            <h5>Cuidar com carinho</h5>
+                            <p class="flow-text center margin-top-more">Cuidar da experiência de quem está com a gente é nossa prioridade máxima. Do atendimento ao produto, do Discord à caixa que chega em casa, garantimos qualidade, segurança e aquele toque nerd que faz tudo valer a pena.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact section-->
+
+        <section class="scrollspy" id="contact">
+            <div class="container">
+                <div class="row center">
+                    <div class="col s12">
+                        <h2 class="white-text">fale conosco</h2>
+                    </div>
+                </div>
+                <form id="mail-form" action="mailer/mailer.php" novalidate autocomplete="off">
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <div class="input-field">
+                                <input id="name" type="text" name="name">
+                                <label for="name">nome</label>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                            <div class="input-field">
+                                <input id="email" type="email" name="email">
+                                <label for="email">email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field">
+                                <textarea class="materialize-textarea" id="message" name="message"></textarea>
+                                <label for="message">mensagem</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center">
+                            <button class="btn btn-large btn-flat waves-effect waves-light" id="send-message" type="submit">enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="center-on-medium-and-down">
+            <div class="container">
+                <div class="row flow-text">
+                    <div class="col s12 l6">
+                        <address>Rua Embaixador Raul Garcia
+                            <br>São Paulo - SP - Brasil
+                            <br>
+                        </address>
+                        <a class="underline waves-effect waves-light" href="https://www.google.com/maps/dir//R.+Emb.+Raul+Garcia+-+Bosque+da+Sa%C3%BAde,+S%C3%A3o+Paulo+-+SP,+04127-010,+Brasil" target="_blank">estamos aqui &nearr;</a>
+                    </div>
+                    <div class="col s12 l6">
+                        <p>
+                            <a class="underline waves-effect waves-light" href="mailto:hi@nana.io">contato@dicesrpg.com</a>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section-->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l6">fica mais, vai ter bolo &copy; 2025</div>
+                    <div class="col s12 l6">
+                        <a class="underline waves-effect waves-light" href="#!">Facebook</a> •
+                        <a class="underline waves-effect waves-light" href="#!">Twitter</a> •
+                        <a class="underline waves-effect waves-light" href="#!">VK</a> •
+                        <a class="underline waves-effect waves-light" href="#!">Github</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Attached scripts-->
+        <!-- Libraries-->
+        <script src="./libs/jquery/jquery.min.js"></script>
+        <script src="./libs/materialize/js/materialize.min.js"></script>
+        <!-- Nana scripts-->
+        <script src="./assets/js/config.js"></script>
+        <script src="./assets/js/nana.js"></script>
+        <script src="./assets/js/neon-bubbles-red.js"></script>
+    </body>
+</html>
